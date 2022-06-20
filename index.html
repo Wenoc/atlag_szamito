@@ -10,26 +10,26 @@
     <!-- <link rel="stylesheet" href="debug.css"> -->
 </head>
 <body>
-    <script src="javascript.js"></script>
     <div class="section">
         <div class="container" style="display: flex; justify-content: center;">
-            <div class="tabla" style="width: 700px; ">
-                <div class="column" style="border: 2px solid black; margin-bottom: 10px;">
-                    as
+            <div class="tabla" style="width: 700px;">
+                <div class="column has-text-weight-bold is-size-4" style="border: 2px solid black; margin-bottom: 10px; text-align: center;">
+                    Tantárgyak
                 </div>
                 <div class="columns pr-3 pl-3" style="border-spacing: 0ch;">
-                    <div class="column" style="border: 2px solid black; border-right: 0;">
+                    <div class="column has-text-weight-bold" style="border: 2px solid black; border-right: 0;">
                         PIT
                     </div>
-                    <div class="column is-5" style="border: 2px solid black; border-right: 0;;">
-                        as
+                    <div id="pit" class="column is-5" style="border: 2px solid black; border-right: 0;">
+                        <span onclick="setAttribute('hidden', '')">5, </span>
+                        <span onclick="setAttribute('hidden', '')">4, </span>
                     </div>
-                    <div class="column is-1" style="border: 2px solid black; border-spacing: 0ch;">
-                        as
+                    <div id="pit_atlag" class="column is-1" style="border: 2px solid black; border-spacing: 0ch;">
+                        
                     </div>
                 </div>
                 <div class="columns pr-3 pl-3" style="border-spacing: 0ch;">
-                    <div class="column" style="border: 2px solid black; border-right: 0; border-top: 0;">
+                    <div class="column has-text-weight-bold" style="border: 2px solid black; border-right: 0; border-top: 0;">
                         Web programozás
                     </div>
                     <div class="column is-5" style="border: 2px solid black; border-right: 0; border-top: 0;">
@@ -40,7 +40,7 @@
                     </div>
                 </div>
                 <div class="columns pr-3 pl-3" style="border-spacing: 0ch;">
-                    <div class="column" style="border: 2px solid black; border-right: 0; border-top: 0;">
+                    <div class="column has-text-weight-bold" style="border: 2px solid black; border-right: 0; border-top: 0;">
                         Matematika
                     </div>
                     <div class="column is-5" style="border: 2px solid black; border-right: 0; border-top: 0;">
@@ -51,7 +51,7 @@
                     </div>
                 </div>
                 <div class="columns pr-3 pl-3" style="border-spacing: 0ch;">
-                    <div class="column" style="border: 2px solid black; border-right: 0; border-top: 0;">
+                    <div class="column has-text-weight-bold" style="border: 2px solid black; border-right: 0; border-top: 0;">
                         Szociológia
                     </div>
                     <div class="column is-5" style="border: 2px solid black; border-right: 0; border-top: 0;">
@@ -62,8 +62,8 @@
                     </div>
                 </div>
                 <div class="columns pr-3 pl-3" style="border-spacing: 0ch;">
-                    <div class="column" style="border: 2px solid black; border-right: 0; border-top: 0;">
-                        Választott Matematika
+                    <div class="column has-text-weight-bold" style="border: 2px solid black; border-right: 0; border-top: 0;">
+                        Választott matematika
                     </div>
                     <div class="column is-5" style="border: 2px solid black; border-right: 0; border-top: 0;">
                         as
@@ -73,7 +73,7 @@
                     </div>
                 </div>
                 <div class="columns pr-3 pl-3" style="border-spacing: 0ch;">
-                    <div class="column" style="border: 2px solid black; border-right: 0; border-top: 0;">
+                    <div class="column has-text-weight-bold" style="border: 2px solid black; border-right: 0; border-top: 0;">
                         Számítógépes rendszerek
                     </div>
                     <div class="column is-5" style="border: 2px solid black; border-right: 0; border-top: 0;">
@@ -84,7 +84,7 @@
                     </div>
                 </div>
                 <div class="columns pr-3 pl-3" style="border-spacing: 0ch;">
-                    <div class="column" style="border: 2px solid black; border-right: 0; border-top: 0;">
+                    <div class="column has-text-weight-bold" style="border: 2px solid black; border-right: 0; border-top: 0;">
                         Adatbázisok
                     </div>
                     <div class="column is-5" style="border: 2px solid black; border-right: 0; border-top: 0;">
@@ -95,7 +95,7 @@
                     </div>
                 </div>
                 <div class="columns pr-3 pl-3" style="border-spacing: 0ch;">
-                    <div class="column" style="border: 2px solid black; border-right: 0; border-top: 0;">
+                    <div class="column has-text-weight-bold" style="border: 2px solid black; border-right: 0; border-top: 0;">
                         Programozás
                     </div>
                     <div class="column is-5" style="border: 2px solid black; border-right: 0; border-top: 0;">
@@ -106,7 +106,7 @@
                     </div>
                 </div>
                 <div class="columns pr-3 pl-3" style="border-spacing: 0ch;">
-                    <div class="column" style="border: 2px solid black; border-right: 0; border-top: 0;">
+                    <div class="column has-text-weight-bold" style="border: 2px solid black; border-right: 0; border-top: 0;">
                         Torna
                     </div>
                     <div class="column is-5" style="border: 2px solid black; border-right: 0; border-top: 0;">
@@ -117,7 +117,7 @@
                     </div>
                 </div>
                 <div class="columns pr-3 pl-3" style="border-spacing: 0ch;">
-                    <div class="column" style="border: 2px solid black; border-right: 0; border-top: 0;">
+                    <div class="column has-text-weight-bold" style="border: 2px solid black; border-right: 0; border-top: 0;">
                         Magyar nyelv
                     </div>
                     <div class="column is-5" style="border: 2px solid black; border-right: 0; border-top: 0;">
@@ -128,7 +128,7 @@
                     </div>
                 </div>
                 <div class="columns pr-3 pl-3" style="border-spacing: 0ch;">
-                    <div class="column" style="border: 2px solid black; border-right: 0; border-top: 0;">
+                    <div class="column has-text-weight-bold" style="border: 2px solid black; border-right: 0; border-top: 0;">
                         Szerb nyelv
                     </div>
                     <div class="column is-5" style="border: 2px solid black; border-right: 0; border-top: 0;">
@@ -139,7 +139,7 @@
                     </div>
                 </div>
                 <div class="columns pr-3 pl-3" style="border-spacing: 0ch;">
-                    <div class="column" style="border: 2px solid black; border-right: 0; border-top: 0;">
+                    <div class="column has-text-weight-bold" style="border: 2px solid black; border-right: 0; border-top: 0;">
                         Angol nyelv
                     </div>
                     <div class="column is-5" style="border: 2px solid black; border-right: 0; border-top: 0;">
@@ -150,7 +150,7 @@
                     </div>
                 </div>
                 <div class="columns pr-3 pl-3" style="border-spacing: 0ch;">
-                    <div class="column" style="border: 2px solid black; border-right: 0; border-top: 0;">
+                    <div class="column has-text-weight-bold" style="border: 2px solid black; border-right: 0; border-top: 0;">
                         Magaviselet
                     </div>
                     <div class="column is-5" style="border: 2px solid black; border-right: 0; border-top: 0;">
@@ -160,8 +160,30 @@
                         as
                     </div>
                 </div>
+                <div style="display: flex; gap: 10px;">
+                    <div class="select">
+                        <select name="" id="">
+                            <option value="">PIT</option>
+                            <option value="">Web programozás</option>
+                            <option value="">Matematika</option>
+                            <option value="">Szociológia</option>
+                            <option value="">Választott matematika</option>
+                            <option value="">Számítógépes rendszerek</option>
+                            <option value="">Adatbázisok</option>
+                            <option value="">Programozás</option>
+                            <option value="">Torna</option>
+                            <option value="">Magyar nyelv</option>
+                            <option value="">Szerb nyelv</option>
+                            <option value="">Angol nyelv</option>
+                            <option value="">Magaviselet</option>
+                        </select>
+                    </div>
+                    <input type="number" class="input" id="candidate" placeholder="Osztályzat">
+                    <button class="button is-danger" onclick="addItem(); atlagszamitas();">Hozzáadás</button>
+                </div>
             </div>
         </div>
     </div>
+    <script src="javascript.js"></script>
 </body>
 </html>
