@@ -8,6 +8,9 @@ function addItem() {
     span.setAttribute('onclick', 'setAttribute(\'hidden\', \'\')');
     span.setAttribute('id', candidate.value);
     span.appendChild(document.createTextNode(candidate.value + ", "));
+    if(candidate.value > 5 || candidate.value < 1){
+        return;
+    }
     a.appendChild(span);
 }
 
