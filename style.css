@@ -1,3 +1,19 @@
 span:hover{
     cursor: pointer;
 }
+
+.column.is-1.has-text-weight-bold{
+    border: 2px solid black; border-spacing: 0ch; border-top: 0; text-align: center;
+}
+
+#evvegi_atlag{
+    border: 3px solid black; border-spacing: 0ch; border-top: 1px solid black;; text-align: center;
+}
+
+.column.has-text-weight-bold{
+    border: 2px solid black; border-right: 0; border-top: 0;
+}
+
+.column.is-5{
+    border: 2px solid black; border-right: 0; border-top: 0;
+}
