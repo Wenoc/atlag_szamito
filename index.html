@@ -18,10 +18,10 @@
                     Tantárgyak
                 </div>
                 <div class="columns pr-3 pl-3" style="border-spacing: 0ch;">
-                    <div class="column has-text-weight-bold" style="border: 2px solid black; border-right: 0;">
+                    <div class="column has-text-weight-bold" >
                         PIT
                     </div>
-                    <div id="pit" class="column is-5" style="border: 2px solid black; border-right: 0;">
+                    <div id="pit" class="column is-5">
                         <span onclick="setAttribute('hidden', '')">5, </span>
                         <span onclick="setAttribute('hidden', '')">5, </span>
                         <span onclick="setAttribute('hidden', '')">5, </span>
@@ -250,33 +250,35 @@
                     </div>
                 </div>
                 <div class="columns pr-3 pl-3" style="border-spacing: 0ch;">
-                    <div class="column has-text-weight-bold" style="border: 3px solid black; border-right: 0; border-top: 1px solid black;">
+                    <div class="atlagszoveg column has-text-weight-bold">
                         Év végi átlag
                     </div>
                     <div id="evvegi_atlag" class="column is-1 has-text-weight-bold">
                         4.52
                     </div>
                 </div>
-                <div style="display: flex; gap: 10px;">
-                    <div class="select">
-                        <select name="" id="valasztas">
-                            <option value="pit">PIT</option>
-                            <option value="web_programozas">Web programozás</option>
-                            <option value="matematika">Matematika</option>
-                            <option value="szociologia">Szociológia</option>
-                            <option value="valasztott_matematika">Választott matematika</option>
-                            <option value="szamitogepes_rendszerek">Számítógépes rendszerek</option>
-                            <option value="adatbazisok">Adatbázisok</option>
-                            <option value="programozas">Programozás</option>
-                            <option value="torna">Torna</option>
-                            <option value="magyar_nyelv">Magyar nyelv</option>
-                            <option value="szerb_nyelv">Szerb nyelv</option>
-                            <option value="angol_nyelv">Angol nyelv</option>
-                            <option value="magaviselet">Magaviselet</option>
-                        </select>
-                    </div>
+                <div class="hozzadas">
                     <input type="number" class="input" id="candidate" placeholder="Osztályzat">
-                    <button class="button is-danger" onclick="addItem(); atlagszamitas();">Hozzáadás</button>
+                    <div class="hozzadas2">
+                        <div class="select">
+                            <select name="" id="valasztas">
+                                <option value="pit">PIT</option>
+                                <option value="web_programozas">Web programozás</option>
+                                <option value="matematika">Matematika</option>
+                                <option value="szociologia">Szociológia</option>
+                                <option value="valasztott_matematika">Választott matematika</option>
+                                <option value="szamitogepes_rendszerek">Számítógépes rendszerek</option>
+                                <option value="adatbazisok">Adatbázisok</option>
+                                <option value="programozas">Programozás</option>
+                                <option value="torna">Torna</option>
+                                <option value="magyar_nyelv">Magyar nyelv</option>
+                                <option value="szerb_nyelv">Szerb nyelv</option>
+                                <option value="angol_nyelv">Angol nyelv</option>
+                                <option value="magaviselet">Magaviselet</option>
+                            </select>
+                        </div>
+                        <button class="button is-danger" onclick="addItem(); atlagszamitas();">Hozzáadás</button>
+                    </div>
                 </div>
             </div>
         </div>
