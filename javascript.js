@@ -13,6 +13,7 @@ function addItem() {
 
 function atlagszamitas(){
     let osztalyzatok = [];
+    let atlagok = [];
     let tantargyak = ['pit', 'web_programozas', 'matematika', 'szociologia', 'valasztott_matematika', 'szamitogepes_rendszerek', 'adatbazisok', 'programozas', 'torna', 'magyar_nyelv', 'szerb_nyelv', 'angol_nyelv', 'magaviselet']
 
     for(let j = 0; j < tantargyak.length; j++){
@@ -28,14 +29,25 @@ function atlagszamitas(){
         }
         if(osszes > 0){
             document.getElementById(tantargyak[j] + '_atlag').textContent = (osszes/osztalyzatok.length).toFixed(2);
+            atlagok.push(Math.round((osszes/osztalyzatok.length).toFixed(2)));
         }
         else{
             document.getElementById(tantargyak[j] + '_atlag').textContent = '/';
         }
         osztalyzatok = [];
     }
+    console.log(atlagok);
+    evvegiatlag(atlagok);
 }
 
-pit.addEventListener('click', () => {
+function evvegiatlag(atlagok){
+    let ossz = 0;
+    for(let i = 0; i < atlagok.length ; i++){
+        ossz += atlagok[i];
+    }
+    document.getElementById('evvegi_atlag').textContent = (ossz/atlagok.length).toFixed(2);
+}
+
+document.addEventListener('click', () => {
     atlagszamitas();
 })
